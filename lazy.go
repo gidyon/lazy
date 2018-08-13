@@ -1,7 +1,10 @@
 // Package lazy lazily generates values in a given sequence
 package lazy
 
+// Any is a type that will later be unexported
 type Any interface{}
+
+// EvalFunc is another one
 type EvalFunc func(Any) (Any, Any)
 
 // BuildLazyEvaluator is a higher-order function that lazily evaluates next value in a sequence
